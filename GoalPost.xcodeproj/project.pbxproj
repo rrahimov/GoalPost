@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		906938FA2622D8820005476D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906938F92622D8820005476D /* AppDelegate.swift */; };
 		906938FC2622D8820005476D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906938FB2622D8820005476D /* SceneDelegate.swift */; };
-		906938FE2622D8820005476D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906938FD2622D8820005476D /* ViewController.swift */; };
+		906938FE2622D8820005476D /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906938FD2622D8820005476D /* GoalsVC.swift */; };
 		906939012622D8820005476D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906938FF2622D8820005476D /* Main.storyboard */; };
 		906939042622D8820005476D /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 906939022622D8820005476D /* GoalPost.xcdatamodeld */; };
 		906939062622D8840005476D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906939052622D8840005476D /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		906938F62622D8820005476D /* GoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906938F92622D8820005476D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906938FB2622D8820005476D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		906938FD2622D8820005476D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		906938FD2622D8820005476D /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		906939002622D8820005476D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		906939032622D8820005476D /* GoalPost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalPost.xcdatamodel; sourceTree = "<group>"; };
 		906939052622D8840005476D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		906939112622D8AE0005476D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				906938FD2622D8820005476D /* ViewController.swift */,
+				906938FD2622D8820005476D /* GoalsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				906938FE2622D8820005476D /* ViewController.swift in Sources */,
+				906938FE2622D8820005476D /* GoalsVC.swift in Sources */,
 				906938FA2622D8820005476D /* AppDelegate.swift in Sources */,
 				906939042622D8820005476D /* GoalPost.xcdatamodeld in Sources */,
 				906938FC2622D8820005476D /* SceneDelegate.swift in Sources */,
