@@ -27,14 +27,37 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
         createGoalBtn.bindToKeyboard()
      }
     @IBAction func createGoalBtnPressed(_ sender: Any) {
-        
+        if pointsTextField.text != nil {
+            self.save { (complete) in
+                if complete {
+                dismiss(animated: true, completion: nil)
+                }
+        }
+    }
     }
     @IBAction func backBtnPressed(_ sender: Any) {
         dismissDetail()
     }
     
     func save(completion: (_ finished: Bool) -> ()) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        //Instance of Goal entity from core data (passing managedContext so it know where it shall store data):
+        let goal = Goal(context: managedContext)
         
+        //Then we pass data from VC/ setup a model:
+        goal.goalDescription = goalDescription
+        goal.goalType = goalType.rawValue
+        goal.goalCompletionValue = Int32(pointsTextField.text!)!
+        goal.goalProgress = Int32(0)
+        //Tell managed object context to pass this into persistent storage:
+        do {
+            try managedContext.save()
+            completion(true)
+            print("Successfully saved data.")
+        } catch {
+            debugPrint("Coult not save: \(error.localizedDescription)")
+            completion(false)
+        }
     }
     
 }
